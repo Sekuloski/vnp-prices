@@ -8,12 +8,12 @@ import yfinance as yf
 from pandas import DataFrame
 
 SYMBOLS = {
-    'AMZN': 0,
-    'AAPL': 1,
-    'XOM': 2,
-    'NKE': 3,
-    'PFE': 4,
-    'TSLA': 5
+      'AAPL': 0,
+      'AMZN': 1,
+      'NKE': 2,
+      'PFE': 3,
+      'TSLA': 4,
+      'XOM': 5
     }
 
 date_string = "01/08/2022-00:00:00"
@@ -21,6 +21,7 @@ date_format = "%d/%m/%Y-%H:%M:%S"
 
 END_DATE = datetime.datetime.strptime(date_string, date_format)
 START_DATE = END_DATE - datetime.timedelta(days=5 * 365)
+# ESG_QUERY = 'https://query2.finance.yahoo.com/v1/finance/esgChart?symbol='
 
 
 def main():
